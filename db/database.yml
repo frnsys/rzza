@@ -1,0 +1,5 @@
+adapter: 'sqlite3'
+host: 'localhost'
+user: 'root'
+password: 'root'
+database: '/Users/ftseng/Desktop/projects/rzza/db/database'

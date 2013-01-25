@@ -1,0 +1,6 @@
+adapter: 'mysql2'
+host: 'localhost'
+user: 'root'
+password: 'password'
+database: 'db'
+socket: '/tmp/mysql.sock'
