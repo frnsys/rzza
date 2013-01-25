@@ -1,0 +1,139 @@
+http://rss.cnn.com/rss/edition_world.rss, cnn, world news
+http://rss.cnn.com/rss/edition_africa.rss, cnn, world news africa
+http://rss.cnn.com/rss/edition_americas.rss, cnn, world news americas us
+http://rss.cnn.com/rss/edition_asia.rss, cnn, world news asia
+http://rss.cnn.com/rss/edition_meast.rss, cnn, world news middle_east
+http://rss.cnn.com/rss/edition_europe.rss, cnn, world news europe
+http://rss.cnn.com/rss/edition_us.rss, cnn, news us politics
+http://www.aljazeera.com/services/rss/?postingid=2007731105943979989, aljazeera, world news middle_east
+http://feeds.guardian.co.uk/theguardian/world/rss, the guardian, world news europe
+http://www.huffingtonpost.com/feeds/verticals/world/index.xml, huffington post, world news
+http://www.huffingtonpost.com/feeds/verticals/politics/index.xml, huffington post, news politics us
+http://www.huffingtonpost.com/feeds/verticals/business/index.xml, huffington post, news business economy
+http://www.huffingtonpost.com/feeds/verticals/green/index.xml, huffington post, news environment energy
+http://www.huffingtonpost.com/feeds/verticals/technology/index.xml, huffington post, news tech
+http://www.huffingtonpost.com/feeds/verticals/healthy-living/index.xml, huffington post, news health
+http://www.huffingtonpost.com/feeds/verticals/health-news/index.xml, huffington post, health news
+http://www.huffingtonpost.com/feeds/verticals/science/index.xml, huffington post, news science
+http://www.huffingtonpost.com/feeds/verticals/money/index.xml, huffington post, news business economy
+http://www.nytimes.com/services/xml/rss/nyt/World.xml, new york times, world news
+http://www.nytimes.com/services/xml/rss/nyt/Africa.xml, new york times, world news africa
+http://www.nytimes.com/services/xml/rss/nyt/AsiaPacific.xml, new york times, world news asia
+http://www.nytimes.com/services/xml/rss/nyt/Europe.xml, new york times, world news europe
+http://www.nytimes.com/services/xml/rss/nyt/MiddleEast.xml, new york times, world news middle_east
+http://www.nytimes.com/services/xml/rss/nyt/Americas.xml, new york times, world news americas us
+http://www.nytimes.com/services/xml/rss/nyt/US.xml, new york times, news us politics
+http://www.nytimes.com/services/xml/rss/nyt/Politics.xml, new york times, news us politics
+http://www.nytimes.com/services/xml/rss/nyt/Education.xml, new york times, news us education
+http://feeds.nytimes.com/nyt/rss/Business, new york times, news business
+http://www.nytimes.com/services/xml/rss/nyt/EnergyEnvironment.xml, new york times, news business energy environment
+http://www.nytimes.com/services/xml/rss/nyt/Economy.xml, new york times, news business economy
+http://www.nytimes.com/services/xml/rss/nyt/YourMoney.xml, new york times, news business economy
+http://www.nytimes.com/services/xml/rss/nyt/SmallBusiness.xml, new york times, news business
+http://www.nytimes.com/services/xml/rss/nyt/GlobalBusiness.xml, new york times, news business
+http://www.nytimes.com/services/xml/rss/nyt/MediaandAdvertising.xml, new york times, news business media advertising
+http://feeds.nytimes.com/nyt/rss/Technology, new york times, news tech
+http://feeds.nytimes.com/nyt/rss/start-ups, new york times, news tech business internet
+http://feeds.nytimes.com/nyt/rss/internet, new york times, news tech internet
+http://www.nytimes.com/services/xml/rss/nyt/Science.xml, new york times, news science
+http://www.nytimes.com/services/xml/rss/nyt/Environment.xml, new york times, news environment science
+http://www.nytimes.com/services/xml/rss/nyt/Space.xml, new york times, news science space
+http://www.nytimes.com/services/xml/rss/nyt/Health.xml, new york times, news health science
+http://feeds.reuters.com/reuters/worldnews, reuters, world news
+http://feeds2.feedburner.com/time/world, time, world news
+http://feeds2.feedburner.com/time/nation, time, us news
+http://feeds.feedburner.com/time/healthland, time, news health
+http://feeds.feedburner.com/timeblogs/nerd_world, time, news tech
+http://feeds2.feedburner.com/timeblogs/battleland, time, news world us
+http://feeds.feedburner.com/timeblogs/swampland, time, news us politics
+http://feeds2.feedburner.com/timeblogs/globalspin, time, news world
+http://feeds.feedburner.com/time/moneyland, time, news business economy
+http://feeds2.feedburner.com/time/business, time, news business
+http://feeds2.feedburner.com/time/scienceandhealth, time, news science health
+http://feeds2.feedburner.com/timeblogs/ecocentric, time, news environment
+http://news.yahoo.com/rss/world, yahoo, world news
+http://rss.msnbc.msn.com/id/3032506/device/rss/rss.xml, msnbc, world news
+http://rss.msnbc.msn.com/id/3032524/device/rss/rss.xml, msnbc, us news politics
+http://rss.msnbc.msn.com/id/3032552/device/rss/rss.xml, msnbc, us news politics
+http://rss.msnbc.msn.com/id/3032071/device/rss/rss.xml, msnbc, business news
+http://news.yahoo.com/rss/us, yahoo, us news americas
+http://news.yahoo.com/rss/health, yahoo, health news
+http://news.yahoo.com/rss/science, yahoo, science news
+http://news.yahoo.com/rss/tech, yahoo, tech news
+http://news.yahoo.com/rss/middle-east, yahoo, world middle_east news
+http://news.yahoo.com/rss/europe, yahoo, world news europe
+http://news.yahoo.com/rss/latin-america, yahoo, world news americas
+http://news.yahoo.com/rss/africa, yahoo, world news africa
+http://news.yahoo.com/rss/asia, yahoo, world news asia
+http://news.yahoo.com/rss/canada, yahoo, world news canada americas
+http://news.yahoo.com/rss/australia-antarctica, yahoo, world news australia antarctica
+http://feeds.abcnews.com/abcnews/internationalheadlines, abc, world news
+http://feeds.abcnews.com/abcnews/usheadlines, abc, news us
+http://feeds.abcnews.com/abcnews/politicsheadlines, abc, news us politics
+http://feeds.abcnews.com/abcnews/moneyheadlines, abc, news business economy
+http://feeds.abcnews.com/abcnews/technologyheadlines, abc, news tech
+http://feeds.abcnews.com/abcnews/healthheadlines, abc, news health
+http://feeds.abcnews.com/abcnews/worldnewsheadlines, abc, news world
+http://rss.msnbc.msn.com/id/3088327/device/rss/rss.xml, msnbc, news health
+http://rss.msnbc.msn.com/id/3032117/device/rss/rss.xml, msnbc, news tech science
+http://rss.msnbc.msn.com/id/3036013/device/rss/rss.xml, msnbc, newss world africa news
+http://rss.msnbc.msn.com/id/3036018/device/rss/rss.xml, msnbc, news world americas
+http://rss.msnbc.msn.com/id/3036050/device/rss/rss.xml, msnbc, news middle_east africa world north_africa
+http://rss.msnbc.msn.com/id/3036033/device/rss/rss.xml, msnbc, news europe world
+http://rss.msnbc.msn.com/id/3036028/device/rss/rss.xml, msnbc, news asia south_asia central_asia world
+http://rss.msnbc.msn.com/id/3036058/device/rss/rss.xml, msnbc, news world asia asia_pacific
+http://www.npr.org/rss/rss.php?id=1001, npr, news
+http://www.npr.org/rss/rss.php?id=1006, npr, news business
+http://www.npr.org/rss/rss.php?id=1007, npr, news health science
+http://www.npr.org/rss/rss.php?id=1021, npr, news people places
+http://www.npr.org/rss/rss.php?id=1012, npr, news politics
+http://www.npr.org/rss/rss.php?id=1003, npr, news us
+http://www.npr.org/rss/rss.php?id=1004, npr, news world
+http://www.npr.org/rss/rss.php?id=1013, npr, news education
+http://www.npr.org/rss/rss.php?id=1017, npr, news economy
+http://www.npr.org/rss/rss.php?id=1025, npr, news environment
+http://www.npr.org/rss/rss.php?id=1027, npr, news health
+http://www.npr.org/rss/rss.php?id=1009, npr, news middle_east
+http://www.npr.org/rss/rss.php?id=1014, npr, news politics
+http://www.npr.org/rss/rss.php?id=1019, npr, news tech
+http://feeds.feedburner.com/atlanticpoliticschannel, atlantic, news politics
+http://feeds.feedburner.com/atlanticbusinesschannel, atlantic, news business
+http://feeds.feedburner.com/atlanticinternational, atlantic, news world
+http://feeds.feedburner.com/atlanticscienceandtechnology, atlantic, news science tech
+http://feeds.feedburner.com/atlanticnational, atlantic, news us
+http://feeds.feedburner.com/atlanticfood, atlantic, news health
+http://rss.sciam.com/scientificamerican-news, scientific american, news science tech
+http://feeds.reuters.com/reuters/businessnews, reuters, news business
+http://feeds.reuters.com/reuters/companynews, reuters, news business
+http://feeds.reuters.com/reuters/environment, reuters, news environment
+http://feeds.reuters.com/reuters/healthnews, reuters, news health
+http://feeds.reuters.com/news/wealth, reuters, news business economy
+http://feeds.reuters.com/reuters/politicsnews, reuters, news politics
+http://feeds.reuters.com/reuters/sciencenews, reuters, news science
+http://feeds.reuters.com/reuters/technologynews, reuters, news tech
+http://feeds.reuters.com/reuters/domesticnews, reuters, news us
+http://feeds.reuters.com/news/economy, reuters, news economy business
+http://feeds.reuters.com/reuters/usenergynews, reuters, news energy
+http://feeds.reuters.com/reuters/financialsnews, reuters, news economy
+http://feeds.reuters.com/reuters/ushealthcarenews, reuters, news health
+http://feeds.reuters.com/reuters/technologysectornews, reuters, news tech
+http://feeds.reuters.com/reuters/ustechnologytelcomnews, reuters, news tech
+http://www.guardian.co.uk/world/usa/rss, the guardian, news us
+http://www.guardian.co.uk/world/us-politics/rss, the guardian, news us politics
+http://www.guardian.co.uk/business/us-edition/rss, the guardian, news business
+http://www.guardian.co.uk/environment/rss, the guardian, news environment
+http://www.guardian.co.uk/environment/energy/rss, the guardian, news energy environment
+http://www.economist.com/topics/banking/index.xml, the economist, news banking finance economy
+http://www.economist.com/topics/biotechnology/index.xml, the economist, news tech science biotech
+http://www.economist.com/topics/economics/index.xml, the economist, news economy
+http://www.economist.com/topics/environmental-problems-and-protection/index.xml, the economist, news environment
+http://rss.upi.com/news/business_news.rss, upi, news business
+http://rss.upi.com/news/science_news.rss, upi, news science
+http://rss.upi.com/news/health_news.rss, upi, news health
+http://hosted2.ap.org/atom/apdefault/386c25518f464186bf7a2ac026580ce7, ap, news us
+http://hosted2.ap.org/atom/apdefault/cae69a7523db45408eeb2b3a98c0c9c5, ap, news world
+http://hosted2.ap.org/atom/apdefault/89ae8247abe8493fae24405546e9a1aa, ap, news politics
+http://hosted2.ap.org/atom/apdefault/f70471f764144b2fab526d39972d37b3, ap, news business
+http://hosted2.ap.org/atom/apdefault/495d344a0d10421e9baa8ee77029cfbd, ap, news tech
+http://hosted2.ap.org/atom/apdefault/bbd825583c8542898e6fa7d440b9febc, ap, news health
+http://hosted2.ap.org/atom/apdefault/b2f0ca3a594644ee9e50a8ec4ce2d6de, ap, news science

@@ -1,0 +1,157 @@
+#!/usr/bin/env ruby
+
+=begin
+
+rzza 0.9
+Francis Tseng (yadonchow.com / @yadonchow)
+
+This script collects articles from specified news feeds to compile a corpus of news articles and other relevant information.
+It does no significant processing on the articles - it just archives them to a database.
+
+It is run from the command line with:
+	$ rzza [arguments]
+
+=end
+
+require "rubygems"
+require "sanitize"
+require "active_record"
+require "sqlite3"
+require "yaml"
+require "feedzirra"
+require "readability"
+require "open-uri"
+require "pathname"	# <= necessary for keeping proper filepaths w/ symlink
+require "net/http"	# <= for checking if urls are still working
+require "fast_stemmer" # <= for text processing
+
+require "colored" 	# <= for making console outputs pretty
+
+require 'fileutils' # <= only for copying files (making database backups)
+
+dir = Pathname.new(__FILE__).realpath.dirname
+Dir[dir+"models/*.rb"].each {|file| require file }
+require dir+"db/migrate.rb"
+require dir+"core.rb"
+require dir+"digest/digest.rb"
+
+# Ctrl+C to elegantly exit
+trap("SIGINT") { exit }
+
+db_connect # connect to database
+
+case ARGV[0]
+
+# Displays all feed urls
+when "feeds"
+	if ARGV[1] == "export"
+		export_feeds
+	else
+		display_feeds(ARGV[1])
+	end
+
+# Displays entries for a single feed
+when "feed"
+	if ARGV[1] == "update" || ARGV[1] == "-u"
+		update_feed(ARGV)
+	elsif ARGV[1] == "remove" || ARGV[1] == "-r"
+		removeFeed(ARGV[2])
+	elsif ARGV[1] == "add" || ARGV[1] == "-a"
+		spawn_feeds(ARGV[2])
+		puts "Feed added"
+	else
+		display_feed(ARGV[1])
+	end
+
+# Displays a random entry
+when "random"
+	random_entry
+
+# Text processing test
+when "process"
+	random_process
+
+# Display stats
+when "stats"
+	display_stats
+
+# Displays all categories
+when "categories"
+	display_categories
+
+# Displays all sources
+when "sources"
+	display_sources
+	
+# Updates all feeds
+when "update"
+	FileUtils.cp(dir+"db/database", dir+"db/backups/"+Time.new.strftime("%Y%m%d%H%M%S"))
+	update
+
+# Spawns a new database if none exists,
+# populates categories, sources, & feeds
+when "init"
+	initialize_db
+
+# Updates categories, sources, and feeds
+# with new records
+when "migrate"
+	spawn_feeds
+	puts "Feed list updated"
+
+# Just to make sure things are in properly in the database...
+when "gutcheck"
+	40.times {print "="}
+	puts "\ncategories: " + Category.all.size.to_s + " total:"
+	Category.all.each do |category|
+		puts "\t" + category.name + ", id:" + category.id.to_s + " (with " + category.feeds.size.to_s + " feeds)"
+	end
+	40.times {print "="}
+	puts "\nsources: " + Source.all.size.to_s + " total:"
+	Source.all.each do |source|
+		puts "\t" + source.name + ", id:" + source.id.to_s + " (with " + source.feeds.size.to_s + " feeds)"
+	end
+	40.times {print "="}
+	puts "\nfeeds: " + Feed.all.size.to_s + " total:"
+	Feed.all.each do |feed|
+		puts feed.url
+		puts "\tid: " + feed.id.to_s
+		puts "\tsource: " + feed.source.name
+		print "\tcategories:"
+		feed.categories.each do |category|
+			print " /" + category.name
+		end
+		print "\n"
+	end
+
+# Displays commands
+# add an update command, to change a feed's categories, url, or source
+else
+	puts "\nrzza v0.9".bold.green
+	print "Francis Tseng (supermedes.com)\n"\
+		"This script collects articles from specified news feeds to compile a corpus of news articles and other relevant information.\n"\
+		"It does no significant processing on the articles - it just archives them to a database.\n"\
+		"=======================================================\n"
+	puts "You may use the following arguments:".bold.cyan
+	print "\tinit \t\t\t\t will create the database & populate with categories, feeds, and sources\n"\
+		"\tmigrate \t\t\t will update the database with newly added feeds\n"\
+		"\tupdate \t\t\t\t updates all feeds, returns how many entries were added\n"\
+		"\tstats \t\t\t\t returns number of entries, feeds, sources, and categories\n"\
+		"\tfeeds \t\t\t\t returns all feeds with their id, categories, source, url, and number of entries\n"\
+		"\tfeeds down \t\t\t returns all feeds that are down\n"\
+		"\tfeeds [source|category] \t returns feed info for named source or category\n"\
+		"\tfeed [ID|URL] \t\t\t returns info for a feed with the given [ID]\n"\
+		"\tfeed update [ID|URL] [URL] \t updates the specified feed with the new [URL]\n"\
+		"\tfeed remove [ID|URL] \t\t will remove the specified feed\n"\
+		"\tfeed add [params] \t\t will add a new feed\n"\
+		"\t\t\t\t\t\tparams format: 'feedUrl, feedSource, category1 category2 category3'\n"\
+		"\trandom \t\t\t\t returns a random entry\n"\
+		"\tcategories \t\t\t returns all categories with number of feeds and entries\n"\
+		"\tsources \t\t\t returns all sources with number of feeds and entries\n"\
+		"=======================================================\n"\
+		"\n"
+end
+
+
+
+ 	
