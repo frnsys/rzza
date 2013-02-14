@@ -1,7 +1,7 @@
 # rzza
 Francis Tseng
 
-[yadonchow.com](yadonchow.com)
+[supermedes.com](http://supermedes.com)
 
 This script collects articles from specified news feeds to compile a corpus of news articles and other relevant information.
 It does no significant processing on the articles - it just archives them to a database.
